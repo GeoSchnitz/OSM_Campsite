@@ -31,7 +31,7 @@ var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(52.265, 10.524), 1
 
 //OverPassAPI overlay
 var opl = new L.OverPassLayer({
-  query: "http://overpass-api.de/api/interpreter?data=[out:json];node(BBOX)[amenity=post_box];out;",
+  query: "http://overpass-api.de/api/interpreter?data=[out:json];node(BBOX)[tourism=camp_site];out;",
 }
 map.addLayer(opl);
 
